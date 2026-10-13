@@ -1,0 +1,20 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "email": "benchmark@example.com",
+  "name": "Benchmark User",
+  "age": 28,
+  "items": [
+    {
+      "name": "Mechanical Keyboard",
+      "quantity": 2
+    },
+    {
+      "name": "Gaming Mouse",
+      "quantity": 1
+    },
+    {
+      "name": "Monitor",
+      "quantity": 3
+    }
+  ]
+}

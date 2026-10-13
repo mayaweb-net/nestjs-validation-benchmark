@@ -1,0 +1,9 @@
+node_modules
+dist
+results
+.git
+.cursor
+coverage
+*.md
+.env*
+*.tsbuildinfo
