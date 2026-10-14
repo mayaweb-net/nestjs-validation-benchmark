@@ -1,6 +1,8 @@
 node_modules
 dist
-results
+dist-scripts
+apps/*/dist-scripts
+apps/*/results
 .git
 .cursor
 coverage

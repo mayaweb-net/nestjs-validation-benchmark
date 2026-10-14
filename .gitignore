@@ -3,6 +3,7 @@
 /dist-scripts
 /node_modules
 /build
+/apps/*/dist-scripts
 
 # TypeScript build cache
 *.tsbuildinfo
@@ -24,8 +25,8 @@ lerna-debug.log*
 /.nyc_output
 
 # Benchmark outputs
-/results/*
-!/results/.gitkeep
+/apps/*/results/*
+!/apps/*/results/.gitkeep
 
 # IDEs and editors
 /.idea

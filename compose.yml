@@ -1,9 +1,44 @@
 services:
-  api:
-    build: .
+  validation-api:
+    build:
+      context: .
+      args:
+        APP: nestjs-validation-benchmark
     container_name: validation-benchmark-api
+    environment:
+      PORT: 3000
     ports:
       - '3000:3000'
+    restart: unless-stopped
+    cpus: 2.0
+    mem_limit: 1g
+
+  adapter-express:
+    build:
+      context: .
+      args:
+        APP: nestjs-adapter-benchmark
+    container_name: adapter-benchmark-express
+    environment:
+      PORT: 3001
+      ADAPTER: express
+    ports:
+      - '3001:3001'
+    restart: unless-stopped
+    cpus: 2.0
+    mem_limit: 1g
+
+  adapter-fastify:
+    build:
+      context: .
+      args:
+        APP: nestjs-adapter-benchmark
+    container_name: adapter-benchmark-fastify
+    environment:
+      PORT: 3001
+      ADAPTER: fastify
+    ports:
+      - '3002:3001'
     restart: unless-stopped
     cpus: 2.0
     mem_limit: 1g
