@@ -42,3 +42,18 @@ services:
     restart: unless-stopped
     cpus: 2.0
     mem_limit: 1g
+
+  serialization-api:
+    build:
+      context: .
+      args:
+        APP: nestjs-serialization-benchmark
+    container_name: serialization-benchmark-api
+    environment:
+      PORT: 3003
+      SERIALIZER: ${SERIALIZER:-default}
+    ports:
+      - '3003:3003'
+    restart: unless-stopped
+    cpus: 2.0
+    mem_limit: 1g

@@ -39,6 +39,9 @@
     },
     {
       "path": "./apps/nestjs-adapter-benchmark/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/nestjs-serialization-benchmark/tsconfig.app.json"
     }
   ]
 }

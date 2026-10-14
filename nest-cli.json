@@ -19,6 +19,15 @@
         "tsConfigPath": "apps/nestjs-adapter-benchmark/tsconfig.app.json"
       }
     },
+    "nestjs-serialization-benchmark": {
+      "type": "application",
+      "root": "apps/nestjs-serialization-benchmark",
+      "entryFile": "main",
+      "sourceRoot": "apps/nestjs-serialization-benchmark/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nestjs-serialization-benchmark/tsconfig.app.json"
+      }
+    },
     "nestjs-validation-benchmark": {
       "type": "application",
       "root": "apps/nestjs-validation-benchmark",
