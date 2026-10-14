@@ -57,3 +57,18 @@ services:
     restart: unless-stopped
     cpus: 2.0
     mem_limit: 1g
+
+  logger-api:
+    build:
+      context: .
+      args:
+        APP: nestjs-logger-benchmark
+    container_name: logger-benchmark-api
+    environment:
+      PORT: 3004
+      LOGGER: ${LOGGER:-silent}
+    ports:
+      - '3004:3004'
+    restart: unless-stopped
+    cpus: 2.0
+    mem_limit: 1g

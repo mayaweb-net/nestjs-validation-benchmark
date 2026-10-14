@@ -42,6 +42,9 @@
     },
     {
       "path": "./apps/nestjs-serialization-benchmark/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/nestjs-logger-benchmark/tsconfig.app.json"
     }
   ]
 }
